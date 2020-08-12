@@ -1,4 +1,4 @@
-const api_location = "http://localhost:3000/weather"
+const api_location = "/weather"
 
 const flex = document.getElementById("flex");
 const result = document.getElementById("result");
