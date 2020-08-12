@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather</title>
+        <meta name="description" content="Get weather data of a location">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="res/logo.png">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="circle-back"></div>
+
+        <div class="grid-container">
+
+            <!-- Header -->
+            <div class="grid-item" id="header">
+                <div class="logo-container header-item">
+                    <img class="logo" src="res/logo.png">
+                </div>
+                <div class="header-item" id="date"><strong>Sunday</strong>, 12th April</div>
+            </div>
+
+            <!-- Search -->
+            <div class="grid-item" id="search">
+                <div class="search-container">
+                    <input type="search" id="location" value="Delhi">
+                    <i class="fa fa-search" id="searchButton"></i>
+                </div>
+            </div>
+
+            <div class="grid-item" id="loader">
+                <div class="circle-loader"></div>
+            </div>
+            
+            <!-- Result  -->
+            <div class="grid-item" id="result">
+                <i class="fas fa-angle-left slideButton" id="leftslide"></i>
+                <div id="flex">
+                </div>
+                <i class="fas fa-angle-right slideButton" id="rightslide"></i>
+            </div>
+
+
+        </div>
+
+    </body>
+    <script type="module" src="main.js"></script>
+</html>
